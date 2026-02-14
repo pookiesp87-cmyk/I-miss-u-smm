@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>I Miss You 💌</title>
+  <style>
+    body {
+      text-align: center;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+    h1 {
+      margin-top: 100px;
+      font-size: 40px;
+      color: white;
+    }
+    .buttons {
+      margin-top: 40px;
+    }
+    button {
+      padding: 12px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      margin: 10px;
+      transition: 0.2s;
+    }
+    #yes {
+      background-color: #ff4d6d;
+      color: white;
+    }
+    #no {
+      background-color: white;
+      color: #ff4d6d;
+      position: absolute;
+    }
+    .message {
+      font-size: 28px;
+      color: white;
+      margin-top: 30px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>I miss you so much 🥺💗<br>Do you miss me too?</h1>
+
+  <div class="buttons">
+    <button id="yes" onclick="showLove()">Yes 😭</button>
+    <button id="no" onmouseover="moveButton()">No 🙄</button>
+  </div>
+
+  <div class="message" id="loveMessage">
+    I knew ittt 😭💞<br>
+    Come back and hug me rn 🫂💋
+  </div>
+
+<script>
+  function moveButton() {
+    var button = document.getElementById("no");
+    var x = Math.random() * window.innerWidth;
+    var y = Math.random() * window.innerHeight;
+    button.style.left = x + "px";
+    button.style.top = y + "px";
+  }
+
+  function showLove() {
+    document.getElementById("loveMessage").style.display = "block";
+  }
+</script>
+
+</body>
+</html>
